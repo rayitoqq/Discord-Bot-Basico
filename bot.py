@@ -11,6 +11,6 @@ bot = commands.Bot('!r', intents=intents)
 @bot.command(aliases=["hola"])
 async def olá(ctx): # Crear la función asincrónica
     autor = ctx.author.mention # Mencion a ti
-    await ctx.send(f'ola, {autor}!') # Envia uma mensage
+    await ctx.send(f'Hola, {autor}!') # Envia uma mensage
 
 bot.run('Tu Token') # bot
