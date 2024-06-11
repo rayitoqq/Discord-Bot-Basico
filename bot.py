@@ -1,16 +1,13 @@
-# Importações
 import discord
 from discord.ext import commands
 
-# Intents e criação do bot
-intents = discord.Intents.all() # Ativa todas as intents
+intents = discord.Intents.all()
 bot = commands.Bot('!r', intents=intents)
 
 
-#Comando "!rhola"
 @bot.command(aliases=["hola"])
-async def olá(ctx): # Crear la función asincrónica
-    autor = ctx.author.mention # Mencion a ti
-    await ctx.send(f'Hola, {autor}!') # Envia uma mensage
+async def olá(ctx): 
+    autor = ctx.author.mention 
+    await ctx.send(f'Hola, {autor}!') 
 
-bot.run('Tu Token') # bot
+bot.run('Tu Token') 
